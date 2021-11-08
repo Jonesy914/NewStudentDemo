@@ -12,9 +12,18 @@ namespace NewStudentDemo
 {
     public partial class Form1 : Form
     {
+        Student newStudent;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            newStudent = new Student(txtName.Text, Convert.ToInt16(txtAge.Text));
+            MessageBox.Show("Record created!");
+            txtName.Clear();
+            txtAge.Clear();
         }
     }
 }
