@@ -30,5 +30,11 @@ namespace NewStudentDemo
         {
             MessageBox.Show("The student is: " + newStudent.Name + " and their age is: " + newStudent.Age);
         }
+
+        private void btnChangeAge_Click(object sender, EventArgs e)
+        {
+            newStudent.changeAge();
+            MessageBox.Show("The student is: " + newStudent.Name + " and their age is " + newStudent.Age);
+        }
     }
 }
