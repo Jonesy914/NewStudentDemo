@@ -22,7 +22,7 @@ namespace NewStudentDemo
 
         public int Age
         {
-            get { return this.Age; }
+            get { return this.age; }
             set { age = value; }
         }
 
