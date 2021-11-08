@@ -25,5 +25,10 @@ namespace NewStudentDemo
             txtName.Clear();
             txtAge.Clear();
         }
+
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The student is: " + newStudent.Name + " and their age is: " + newStudent.Age);
+        }
     }
 }
